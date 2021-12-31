@@ -1,0 +1,37 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "AngularJS Movie API";
+}
+
+<section class="mb-3 py-2 container">
+    <h1>AngularJS Movie API</h1>
+</section>
+
+<section class="container mb-3" ng-app="movieApp">
+    <div class="card">
+        <div class="card-header">
+            <span class="lead">Search for a movie below</span>
+        </div>
+        <div class="card-body">
+            <!-- Dive holding the controller content-->
+            <div ng-controller="Movie">
+                <h1>Movie Database</h1>
+                <!-- Input Controls-->
+                <input type="text" id="searchText" ng-model="title" placeholder="Enter Movie Title" />
+                <input type="button" id="GetArtistData" value="Search" ng-click="movie(title)" />
+                <br />
+
+                <!-- Div holding The artist selection-->
+                <div>
+                    Movie Searched: {{title}}
+                </div>
+
+                <!-- Div Holding Movie info Result-->
+                <div>
+                    Movie Info: <pre>{{MovieInfo}}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

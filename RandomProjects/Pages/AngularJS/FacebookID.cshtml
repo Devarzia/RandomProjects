@@ -1,0 +1,43 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "FacebookID";
+}
+
+<section class="py-2 mb-3 container">
+    <h1>FacebookID Project</h1>
+</section>
+
+<section class="mb-3 container">
+    <div class="card">
+        <div class="card-header">
+            <span class="lead">Enter Facebook ID below to recieve picture</span>
+        </div>
+        <div class="card-body">
+            <div id="title">
+                <h2>Angular FacebookID Demo</h2>
+            </div>
+            <div id="message">
+                <h3>Wanna See something cool?</h3>
+                <span>This is what you have to do: </span>
+                <ol>
+                    <li>Login to Facebook</li>
+                    <li>Find your user ID (usually after "www.facebook.com/" in the URL)</li>
+                    <li>Type your id in the textbox below</li>
+                    <li>Watch what happens</li>
+                </ol>
+            </div>
+            <div id="content" ng-app="FacebookApp">
+                <form>
+                    <label for="txtID">Facebook ID: </label>
+                    <input type="text" id="txtID" ng-model="ID" />
+                    <br />
+                    <span><img ng-src="https://graph.facebook.com/{{ID}}/picture?type=normal" /></span>
+                </form>
+            </div>
+            <footer>
+                <h3>Pretty Cool huh??</h3>
+            </footer>
+        </div>
+    </div>
+</section>

@@ -6,7 +6,6 @@
     <title>@ViewData["Title"] - RandomProjects</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/RandomProjects.styles.css" asp-append-version="true" />
 </head>
 <body class="bg-primary bg-opacity-25 bg-gradient">
     <header>
@@ -20,10 +19,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/AngularJS/Index">AngularJS</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/AngularJS/Index">AngularJS Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Bootstrap-jQuery/Index">Bootstrap-jQuery</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/jQuery/Index">jQuery Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -34,17 +33,16 @@
         @RenderBody()
     </main>
     <footer class="border-top footer text-muted bg-primary bg-opacity-25">
-        <div class="container">
+        <div class="container py-3">
             &copy; 2021 - RandomProjects - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
+    <script src="~/lib/angularjs/angular.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/Calculator.js"></script>
-    <script src="~/js~/js/BubblingTable.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script src="~/js/site.js"></script>
+    <script src="~/js/GetMovieData.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
