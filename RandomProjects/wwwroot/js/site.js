@@ -17,7 +17,7 @@ $(function () {
     });
 
     var buttonContainer = $("#operations");
-    buttonContainer.on("click", function (event) {
+    buttonContainer.click(function (event) {
         var target = event.target;
 
         if (target.nodeName == "INPUT") {
@@ -43,9 +43,7 @@ $(function () {
                     result = Math.round(firstNumber / secondNumber);
                     break;
             }
-            alert(result);
-            // If statement: If the result isn't null
-            // display results
+            // If statement: If the result isn't null, display results
             if (result != "NaN") {
                 output.text("Result: " + result);
                 $("#txtFirstNumber").focus();
@@ -54,7 +52,7 @@ $(function () {
     })
 
     var bubbleCount = 50;
-    var bubbleField = document.getElementById("bubble-field");
+    var bubbleField = $("#bubble-field");
 
     //generate bubbles with randomly timed animation durations
     for (i = 0; i < bubbleCount; i++) {

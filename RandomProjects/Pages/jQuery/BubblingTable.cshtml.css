@@ -1,0 +1,12 @@
+﻿table#Bubbling td {
+    border-spacing: 15px;
+    padding: 20px;
+    border: 1px black solid;
+    text-align: left;
+}
+
+.select {
+    background-color: red;
+    color: black;
+    font-weight: bolder;
+}

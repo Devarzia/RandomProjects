@@ -4,13 +4,13 @@
     ViewData["Title"] = "Home page";
 }
 
-<section class="bg-light bg-gradient py-4 mb-3 container text-center rounded-3">
+<section class="bg-light py-4 container text-center rounded-3">
     <h1>Welcome to My Random Projects Page</h1>
     <span class="lead">This project is an acumulation of projects from years' past</span>
 </section>
 
-<section class="container">
-    <h2 class="text-center mb-2">Website Contents</h2>
+<section class="container px-md-0">
+    <h2 class="text-center py-2">Website Contents</h2>
     <div class="row">
         <div class="col-md-6">
             <div class="card">
@@ -20,7 +20,7 @@
                         These are AngularJS projects that were created in 2015. The option to convert these 
                         applications to Angular are being considered at this time
                     </p>
-                    <a asp-page="/AngularJS/Index" asp-area="">View Projects</a>
+                    <a class="btn btn-primary" asp-page="/AngularJS/Index">View Projects</a>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     <p>
                         These projects were created with JavaScript in 2015. They have been converted to jQuery for simplicity
                     </p>
-                    <a asp-page="/jQuery/Index" asp-area="">View Projects</a>
+                    <a class="btn btn-primary" asp-page="/jQuery/Index">View Projects</a>
                 </div>
             </div>
         </div>
